@@ -1,0 +1,71 @@
+<!-- reviews.html -->
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Устанавливаем кодировку символов на utf-8 -->
+    <meta charset="utf-8">
+    <!-- Делаем страницу адаптивной для разных устройств -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- Заголовок страницы -->
+    <title>Отзывы - ВШЭ</title>
+    <!-- Подключаем библиотеку стилей Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключаем собственные стили -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <!-- Заголовок страницы -->
+        <h1>Высшая Школа Экономики</h1>
+    </header>
+
+    <div id="navbar"></div> <!-- Здесь будет загружено меню -->
+
+    <div class="container mt-4">
+        <div id="content">
+            <!-- Заголовок раздела отзывов -->
+            <h2 class="text-center">Отзывы</h2>
+            <!-- Форма для отправки отзывов -->
+            <form action="https://www.example.com/submit_review" method="GET">
+                <!-- Поле для ввода имени -->
+                <div class="mb-3">
+                    <label for="name" class="form-label">Имя</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+                <!-- Поле для ввода оценки (от 1 до 5) -->
+                <div class="mb-3">
+                    <label for="rate" class="form-label">Оценка</label>
+                    <input type="number" class="form-control" id="rate" name="rate" min="1" max="5" required>
+                </div>
+                <!-- Выбор типа отзыва (положительный или отрицательный) -->
+                <div class="mb-3">
+                    <label class="form-label">Отзыв</label>
+                    <div>
+                        <input type="radio" id="positive" name="review_type" value="positive" required>
+                        <label for="positive">Положительный</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="negative" name="review_type" value="negative" required>
+                        <label for="negative">Отрицательный</label>
+                    </div>
+                </div>
+                <!-- Кнопка для отправки формы -->
+                <button type="submit" class="btn btn-primary">Отправить</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <!-- Подвал страницы с копирайтом -->
+        &copy; 2024 Высшая Школа Экономики
+    </footer>
+
+    <!-- Подключаем библиотеку скриптов Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Подключаем собственные скрипты -->
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

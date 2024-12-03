@@ -1,0 +1,100 @@
+<!-- index.html -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Устанавливаем кодировку символов на utf-8 -->
+    <meta charset="utf-8">
+    <!-- Делаем страницу адаптивной для разных устройств -->
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <!-- Заголовок страницы -->
+    <title>Главная - ВШЭ</title>
+    <!-- Подключаем библиотеку стилей Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Подключаем собственные стили -->
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <header class="bg-dark text-white text-center py-3">
+        <!-- Заголовок страницы -->
+        <h1>Высшая Школа Экономики</h1>
+        <!-- Якорь для возврата наверх страницы -->
+        <a id="top_of_page"></a>
+    </header>
+
+    <div id="navbar"></div> <!-- Здесь будет загружено меню -->
+
+    <div class="container mt-4">
+        <div id="content">
+            <!-- Приветственное сообщение -->
+            <h2 class="text-center">Добро пожаловать в ВШЭ</h2>
+            <p>Высшая Школа Экономики (ВШЭ) является одним из ведущих университетов России, предлагающим образование
+                мирового уровня. Наши программы направлены на подготовку специалистов высокого уровня в различных
+                областях знаний.</p>
+            <div class="d-flex justify-content-between mb-4">
+                <!-- Кнопки для перемещения к различным разделам страницы -->
+                <a href="#section_1" class="btn btn-primary">История и Миссия</a>
+                <a href="#section_2" class="btn btn-primary">Программы Обучения</a>
+                <a href="#section_3" class="btn btn-primary">Научные Исследования</a>
+                <a href="#section_4" class="btn btn-primary">Студенческая Жизнь</a>
+            </div>
+
+            <!-- Раздел "История и Миссия" -->
+            <h3 id="section_1" class="mt-4">История и Миссия</h3>
+            <p>ВШЭ была основана в 1992 году с целью реформирования высшего образования в России. Наша миссия —
+                создавать, распространять и сохранять знания, способствовать развитию общества путем подготовки
+                высококвалифицированных специалистов.</p>
+            <!-- Изображение здания ВШЭ -->
+            <img src="images/hse_building.jpg" class="img-fluid mb-3 fixed-height-img" alt="HSE Building">
+            <p class="text-muted">Здание ВШЭ</p>
+            <!-- Кнопка для возврата к началу страницы -->
+            <a href="#top_of_page" class="btn btn-secondary">К началу страницы</a>
+
+            <!-- Раздел "Программы Обучения" -->
+            <h3 id="section_2" class="mt-4">Программы Обучения</h3>
+            <p>ВШЭ предлагает разнообразные образовательные программы, включающие бакалавриат, магистратуру и
+                аспирантуру по таким направлениям, как экономика, управление, социология, право, и многие другие.</p>
+            <!-- Изображение студентов ВШЭ -->
+            <img src="images/hse_students.jpg" class="img-fluid mb-3 fixed-height-img" alt="HSE Students">
+            <p class="text-muted">Студенты ВШЭ</p>
+            <!-- Кнопка для возврата к началу страницы -->
+            <a href="#top_of_page" class="btn btn-secondary">К началу страницы</a>
+
+            <!-- Раздел "Научные Исследования" -->
+            <h3 id="section_3" class="mt-4">Научные Исследования</h3>
+            <p>ВШЭ активно занимается научными исследованиями, сотрудничая с ведущими университетами и
+                исследовательскими центрами по всему миру. Наши ученые публикуют свои работы в престижных международных
+                журналах и участвуют в крупных научных конференциях.</p>
+            <!-- Изображение научных исследований в ВШЭ -->
+            <img src="images/hse_research.jpg" class="img-fluid mb-3 fixed-height-img" alt="HSE Research">
+            <p class="text-muted">Научные исследования в ВШЭ</p>
+            <!-- Кнопка для возврата к началу страницы -->
+            <a href="#top_of_page" class="btn btn-secondary">К началу страницы</a>
+
+            <!-- Раздел "Студенческая Жизнь" -->
+            <h3 id="section_4" class="mt-4">Студенческая Жизнь</h3>
+            <p>ВШЭ предлагает своим студентам насыщенную внеклассную жизнь: студенческие клубы, спортивные секции,
+                культурные мероприятия и многое другое. Мы стремимся создать благоприятную и стимулирующую среду для
+                личностного и профессионального развития наших студентов.</p>
+            <!-- Изображение студенческой жизни в ВШЭ -->
+            <img src="images/hse_life.jpg" class="img-fluid mb-3 fixed-height-img" alt="HSE Student Life">
+            <p class="text-muted">Студенческая жизнь в ВШЭ</p>
+            <!-- Кнопка для возврата к началу страницы -->
+            <a href="#top_of_page" class="btn btn-secondary">К началу страницы</a>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white text-center py-3 mt-4">
+        <!-- Подвал страницы с копирайтом -->
+        &copy; 2024 Высшая Школа Экономики
+    </footer>
+
+    <!-- Подключаем библиотеку скриптов Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Подключаем собственные скрипты -->
+    <script src="scripts/scripts.js"></script>
+</body>
+
+</html>

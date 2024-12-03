@@ -1,0 +1,53 @@
+/* styles/styles.css */
+
+/* Общие стили для body, задаем шрифт, убираем отступы */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Стили для header, устанавливаем фоновое изображение и его размер */
+header {
+  background-image: url("../images/background.png");
+  background-size: cover;
+}
+
+/* Стили для активной ссылки в навигационном меню */
+.nav-link.active {
+  font-weight: bold;
+  color: red;
+}
+
+/* Стили для основного контента, задаем внутренний отступ */
+#content {
+  padding: 20px;
+}
+
+/* Стили для карточек, используемых в разных разделах */
+.card {
+  flex-grow: 1;
+  flex-basis: 30%;
+  margin: 10px;
+}
+
+/* Стили для изображений фиксированной высоты, задаем высоту и объектное покрытие */
+.fixed-height-img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Адаптивные стили для карточек на экранах шириной до 768px */
+@media (max-width: 768px) {
+  .card {
+    flex-basis: 100%;
+  }
+}
+
+/* Адаптивные стили для заголовка в header на экранах шириной до 768px */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
